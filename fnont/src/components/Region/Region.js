@@ -32,7 +32,7 @@ function Region() {
     //запрос на получение данных о результатах проверок
     const getScanInfo = () => {
         //получаем номер региона из параметров (useParams)
-        return fetch(`http://localhost:3000/regions/${regNum}`, {
+        return fetch(`https://api-as-scaner.space/regions/${regNum}`, {
           method: 'GET'
         })
         .then(checkResponse)
@@ -41,7 +41,7 @@ function Region() {
     //передаем 3 списка AS (полный, список ушедших и пришедших)
     const saveCurrentScanInfo = ({ASNumbers, ASNumbersCome, ASNumbersGone}) => {
         //получаем номер региона из параметров (useParams)
-        return fetch(`http://localhost:3000/regions/${regNum}`, {
+        return fetch(`http://api-as-scaner.space/regions/${regNum}`, {
           method: 'POST', 
           headers: {
             'Content-Type': 'application/json',

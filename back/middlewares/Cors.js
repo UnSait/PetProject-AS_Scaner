@@ -1,5 +1,6 @@
 const allowedCors = [
-  'http://localhost:3001',
+  'https://as-scaner.space',
+  'http://localhost:3001'
 ];
 
 const DEFAULT_ALLOWED_METHODS = 'GET, POST';
