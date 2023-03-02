@@ -1,0 +1,53 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+html {
+  height: 100vh;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  background: #1A1A1D;
+  color: #FFFFFF;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5e94d2;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input {
+  background: none;
+  border: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+
+h1, h2, h3, p, li, ul {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 500;  
+}
+
+button, input, ul, li  {
+  padding: 0;
+}

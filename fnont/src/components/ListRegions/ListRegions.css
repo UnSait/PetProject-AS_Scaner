@@ -1,0 +1,35 @@
+.list-regions {
+    width: 1200px;
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.list-regions-container__region {
+    padding-top: 30px;
+    min-height: 390px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);    
+    justify-content: center;
+    gap: 0px 10px;
+}
+
+.list-regions-container__region-link {
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.list-regions__btn {
+    padding-bottom: 15px;
+}
+
+.list-regions-container__region-btn {
+    color: white;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    border: solid 2px white;
+    border-radius: 5px;
+}

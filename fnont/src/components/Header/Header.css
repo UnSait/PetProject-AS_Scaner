@@ -1,0 +1,12 @@
+.header {
+    width: 1280px;
+    margin: auto;
+}
+
+.header__logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+}

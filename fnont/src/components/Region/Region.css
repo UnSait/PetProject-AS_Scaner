@@ -1,0 +1,60 @@
+.region {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.region-info__title {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-decoration: underline;
+}
+
+.region-info__quantityAS {
+    color: blueviolet;
+}
+
+.region-info__AS-numbers_come {
+    color: rgb(24, 222, 27);
+}
+
+.region-info__AS-numbers_gone {
+    color: rgb(18, 195, 223)
+}
+
+.region-info__string {
+    padding-bottom: 10px;
+}
+
+.region__container {
+    width: 1200px;
+    min-height: 400px;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.region-info__container {
+    width: 500px;
+    min-height: 300px;    
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+.region-info__btn {
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    background-color:#5e94d2;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.region-info__btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.region__container-btn {
+    padding-bottom: 15px;
+}

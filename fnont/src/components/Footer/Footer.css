@@ -1,0 +1,15 @@
+.footer {
+    width: 1280px;
+    height: 60px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.footer__contacts {
+    padding-bottom: 10px;
+}
+
+.footer__copyright {
+    text-align: right;
+}
