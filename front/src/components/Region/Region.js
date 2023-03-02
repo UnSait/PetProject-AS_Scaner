@@ -41,7 +41,7 @@ function Region() {
     //передаем 3 списка AS (полный, список ушедших и пришедших)
     const saveCurrentScanInfo = ({ASNumbers, ASNumbersCome, ASNumbersGone}) => {
         //получаем номер региона из параметров (useParams)
-        return fetch(`http://api-as-scaner.space/regions/${regNum}`, {
+        return fetch(`https://api-as-scaner.space/regions/${regNum}`, {
           method: 'POST', 
           headers: {
             'Content-Type': 'application/json',
