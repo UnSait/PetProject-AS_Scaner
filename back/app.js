@@ -4,9 +4,13 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
-const Cors = require('./middlewares/Cors');
+const cors = require('cors');
 
 const router = require('./routes/index');
+
+const whitelist = {
+  origin: 'https://as-scaner.space',
+}
 
 const { PORT_SERVER, PORT_DB } = process.env;
 
@@ -18,7 +22,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(Cors);
+app.use(cors(whitelist));
 
 app.use(router);
 
