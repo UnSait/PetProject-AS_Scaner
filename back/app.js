@@ -8,8 +8,10 @@ const cors = require('cors');
 
 const router = require('./routes/index');
 
-const whitelist = {
-  origin: 'https://as-scaner.space',
+const corsOptions ={
+   origin: '*', 
+   credentials: true,            
+   optionSuccessStatus: 200,
 }
 
 const { PORT_SERVER, PORT_DB } = process.env;
@@ -22,7 +24,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(cors(whitelist));
+app.use(cors(corsOptions));
 
 app.use(router);
 
