@@ -8,10 +8,8 @@ const cors = require('cors');
 
 const router = require('./routes/index');
 
-const corsOptions ={
-   origin: '*', 
-   credentials: true,            
-   optionSuccessStatus: 200,
+const corsOptions = {
+  origin: 'https://as-scaner.space',
 }
 
 const { PORT_SERVER, PORT_DB } = process.env;
@@ -24,9 +22,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(cors(corsOptions));
-
-app.use(router);
+app.use(cors(corsOptions), router);
 
 app.listen(PORT_SERVER, () => {
   console.log(`App listening on port ${PORT_SERVER}`);
