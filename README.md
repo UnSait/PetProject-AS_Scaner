@@ -16,3 +16,5 @@
     <li>хранение и запись данных - MongoDB</li>
     <li>парсинг данных - Puppeteer</li>
 </ul>
+
+<a>https://as-scaner.space</a>
