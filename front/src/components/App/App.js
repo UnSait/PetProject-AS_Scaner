@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import NotFound from '../NotFound/NotFound';
+import RequestLimit from '../RequestLimit/RequestLimit';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='/regions' element={<Main />} />
         <Route path='/regions/:regNum' element={<Main />} />
+        <Route path="/request_limit" element={<RequestLimit />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

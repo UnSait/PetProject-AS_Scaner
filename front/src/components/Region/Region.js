@@ -119,9 +119,14 @@ function Region() {
                     }      
                 })
                 .catch((err) => {
-                    console.log("Не удалось загрузить:", err);
-                    //изменяем состояние заргурзки
-                    setLoandingData(false);
+                    //если превышен лимит запросов - редиректим на информационную страницу
+                    if(err == "Ошибка 429") {
+                        navigate('/request_limit')
+                    } else {
+                        console.log("Не удалось загрузить:", err);
+                        //изменяем состояние заргурзки
+                        setLoandingData(false);
+                    }
                 })
         }
     }, []);
