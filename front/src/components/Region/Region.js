@@ -69,10 +69,12 @@ function Region() {
             ASNumbersGone: currentGoneASlistInfo
         })
         .then(() => {
-            //релоадим страницу, чтобы обновить все данные
-            window.location.reload();
+            //редиректим на страницу с информацией о положительном статусе запроса
+            navigate('/successfully');
         })
         .catch((err) => {
+            //редиректим на страницу с информацией об отрицательном статусе запроса
+            navigate('/failed')
             console.log("Не удалось загрузить:", err);
         })
     }

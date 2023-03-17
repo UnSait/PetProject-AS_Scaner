@@ -3,7 +3,7 @@ const rateLimit = require('express-rate-limit')
 
 const getLimiter = rateLimit({
 	windowMs: 1 * 60 * 1000,
-	max: 2,
+	max: 1,
 	message:
 		'Get request limit exceeded',
 	standardHeaders: true,
