@@ -126,6 +126,7 @@ function Region() {
                         navigate('/request_limit')
                     } else {
                         console.log("Не удалось загрузить:", err);
+                        navigate('/error')
                         //изменяем состояние заргурзки
                         setLoandingData(false);
                     }

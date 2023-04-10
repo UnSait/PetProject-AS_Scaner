@@ -1,5 +1,5 @@
 import './ListRegions.css';
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 function ListRegions() { 
@@ -830,8 +830,6 @@ function ListRegions() {
             <button className='list-regions__btn' onClick={showDistrictDFO} type='button'>&larr;Назад</button> 
         </div> 
         }
-
-        <Outlet />
        
     </section>
     );
